@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+ }
+
+ body {
+    background-color:whitesmoke;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .container {
+    /* why wont container take percentage values? */
+    height: 500px;
+    width: 700px;
+    background-color: #000000;
+    -webkit-text-fill-color: #14ef61;
+    /* box-shadow: 0 0 5px 4px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    text-align: center;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+ }
+
+.question {
+    font-size: large;
+    /* margin-bottom: ; */
+}
+
+.options {
+    font-size: medium;
+    /* display: grid; */
+    /* margin-top: ; */
+    /* margin-right: ; */
+    /* margin-bottom: ; */
+    /* margin-left: ; */
+}
+
+
+ .score {
+    font-size: large;
+    font-weight: bold;
+    color:#14ef61
+ }
+ 
+ button {
+    /* font-size: large;
+    font-weight: bold;
+    -webkit-text-fill-color: rgb(1, 1, 1);
+    box-shadow: 0 6px 12px -2px rgba(#f3f5f4, .15);
+    background: #14ef61;
+    border-radius: 4px;
+    padding: 10px;
+    color: rgb(220, 245, 222);
+    margin: 6px;
+    cursor: pointer; */
+
+    margin-top: 350px;
+    margin-bottom: 30px;
+    font-size: large;
+    font-weight: bold;
+    background-color:#14ef61;
+    -webkit-text-fill-color: black;
+    padding: 10px 15px;
+    border-color:white;
+ }
