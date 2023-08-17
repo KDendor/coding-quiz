@@ -15,11 +15,11 @@ let Questions = [
 ]
 
 }
-q: "What is a Queue?",
-a: [{ text: "A Queue refers to a line of strings", isCorrect: false},
-{ text: "A Queue is a line", isCorrect: false},
-{ text: "A Queue refers to a linear data structure that performs opertaions in FIFO order", isCorrect: true},
-{ text: "A Queue is a stick", isCorrect: false}
+    q: "What is a Queue?",
+    a: [{ text: "A Queue refers to a line of strings", isCorrect: false},
+    { text: "A Queue is a line", isCorrect: false},
+    { text: "A Queue refers to a linear data structure that performs opertaions in FIFO order", isCorrect: true},
+    { text: "A Queue is a stick", isCorrect: false}
 ]
 
 let currQuestion = 0
