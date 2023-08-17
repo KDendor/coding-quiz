@@ -9,6 +9,10 @@ a timed, multiple-choice, coding quiz built with dynamically-updated (w/ JavaScr
 ## Credits
 Sources that helped me to work on this project: 
 
+Class notes
+
+Tutor: Erik Hoverston
+
 Simple Steps Code https://simplestepscode.com/javascript-quiz-tutorial/
 
 Geeks for Geeks https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/
@@ -28,6 +32,12 @@ W3Schools https://www.w3schools.com/js/js_const.asp
 W3Schools https://www.w3schools.com/tags/att_input_type_radio.asp
 
 W3Schools https://www.w3schools.com/jsref/met_node_appendchild.asp
+
+Free Code Camp https://www.freecodecamp.org/news/event-bubbling-in-javascript/
+
+JavaScript.Info https://javascript.info/searching-elements-dom
+
+
 
 
 

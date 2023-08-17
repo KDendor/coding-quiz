@@ -1,9 +1,81 @@
 // at the Top of our JAVASCRIPT we GRAB reference to elements on the DOM/HTML
 let startButton = document.getElementById('start-btn');
-startButton.addEventListener('click', loadQues);
+startButton.addEventListener('click', startGame);
 
 let submitButton = document.getElementById("submit-button");
-submitButton.addEventListener('click', checkAns);
+submitButton.addEventListener('click', selectAnswer); 
+
+let currQuestion = 0
+let score = 0
+
+// function startGame () {
+
+// }
+
+function startGame () {
+    console.log("Starting Quiz...");
+    startButton.setAttribute('class', 'hide');
+
+    // let question = document.getElementById("questions")
+    // let opt= document.getElementById("options")
+    // startButton.setAttribute('class', 'hide');
+
+    // question.textContent = Questions[currQuestion].q;
+    // // opt.innerHTML = ""
+
+    // for (let i = 0; i < Questions[currQuestion].a.length; i++) {
+    //     let choicesdiv = document.createElement("div");
+    //     let choice = document.createElement("input");
+    //     let choiceLabel = document.createElement("label");
+
+    //     choice.type = "radio";
+    //     choice.name = "answer";
+    //     choice.value = i;
+
+    //     choiceLabel.textContent = Questions[currQuestion].a[i].text;
+
+    //     choicesdiv.appendChild(choice);
+    //     choicesdiv.appendChild(choiceLabel);
+    //     opt.appendChild(choicesdiv);
+    // }
+}
+
+function selectAnswer() 
+
+
+
+
+
+
+// function loadScore () {
+//     const totalScore = document.getElementById("score")
+//     totalScore.textContent = 'You scored ${score} out of ${Questions.length}'
+// }
+
+function checkAns () {
+    let selectedAns = document.getElementById('input[choice="answer"]')
+    console.log("User Answer: ", selectedAns);
+
+
+    if (Questions[currQuestion].a[selectedAns].isCorrect) {
+        score++;
+        console.log("Correct")
+        nextQuestion ();
+    }
+}
+
+function nextQuestion () {
+    if (currQuestion < Questions.length - 1) {
+        currQuestion++;
+        loadQues ();
+    } else {
+        document.getElementbyId("options").remove ()
+        document.getElementbyId("questions").remove ()
+        document.getElementbyID("submit-button").remove ()
+        loadScore ();
+    }
+}
+
 
 let Questions = [
     {
@@ -34,68 +106,3 @@ let Questions = [
         ]
     }
 ]
-
-
-
-let currQuestion = 0
-let score = 0
-
-function loadQues () {
-    console.log("Starting Quiz...");
-    const question = document.getElementById("questions")
-    const opt = document.getElementById("options")
-    startButton.setAttribute('class', 'hide');
-
-    question.textContent = Questions[currQuestion].q;
-    opt.innerHTML = ""
-
-    for (let i = 0; i < Questions[currQuestion].a.length; i++) {
-        const choicesdiv = document.createElement("div");
-        const choice = document.createElement("input");
-        const choiceLabel = document.createElement("label");
-
-        choice.type = "radio";
-        choice.name = "answer";
-        choice.value = i;
-
-        choiceLabel.textContent = Questions[currQuestion].a[i].text;
-
-        choicesdiv.appendChild(choice);
-        choicesdiv.appendChild(choiceLabel);
-        opt.appendChild(choicesdiv);
-    }
-}
-
-// loadQues ();
-
-function loadScore () {
-    const totalScore = document.getElementById("score")
-    totalScore.textContent = 'You scored ${score} out of ${Questions.length}'
-}
-
-function nextQuestion () {
-    if (currQuestion < Questions.length - 1) {
-        currQuestion++;
-        loadQues ();
-    } else {
-        document.getElementbyId("options").remove ()
-        document.getElementbyId("questions").remove ()
-        document.getElementbyID("submit-button").remove ()
-        loadScore ();
-    }
-}
-
-function checkAns () {
-   // const selectedAns = parseInt(document.querySelector('input[name="answer"]'))
-    const selectedAns = document.querySelector('input[name="answer"]')
-    console.log("User Answer: ", selectedAns);
-
-
-    if (Questions[currQuestion].a[selectedAns].isCorrect) {
-        score++;
-        console.log("Correct")
-        nextQuestion ();
-    } else {
-        nextQuestion ();
-    }
-}
