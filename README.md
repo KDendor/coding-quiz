@@ -23,6 +23,14 @@ JavaScript Tutorial https://www.javascripttutorial.net/javascript-dom/javascript
 
 ByteGrad https://www.youtube.com/watch?v=Ct35t7-iH_E
 
+W3Schools https://www.w3schools.com/js/js_const.asp
+
+W3Schools https://www.w3schools.com/tags/att_input_type_radio.asp
+
+W3Schools https://www.w3schools.com/jsref/met_node_appendchild.asp
+
+
+
 
 
 
