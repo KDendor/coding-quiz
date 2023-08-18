@@ -3,7 +3,7 @@ let startButton = document.getElementById('start-btn');
 startButton.addEventListener('click', startGame);
 
 let submitButton = document.getElementById("submit-button");
-submitButton.addEventListener('click', selectAnswer);
+submitButton.addEventListener('click', checkAns);
 
 let currQuestion = 0
 let score = 0

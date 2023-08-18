@@ -13,16 +13,26 @@
         <div id="questions-container" class="hide"></div>
         <div id="questions"></div>
         <div id="options" class="option-btns">
-            <button class="btn">Answer 1</button>
+            <!-- <button class="btn">Answer 1</button>
             <button class="btn">Answer 2</button>
             <button class="btn">Answer 3</button>
-            <button class="btn">Answer 4</button>
+            <button class="btn">Answer 4</button> -->
         </div>
         <div class="controls"></div>
             <button id="start-btn" class="start-btn">Start</button>
             <button id="submit-button" class="submit-button">Submit</button> 
    </div> 
-   <div id="score" class="score"></div>
-<script type="text/javascript" src="./assets/script.js"></script>
+   <!-- <div class="scores">a href="highscores.html">View High Scores</div>
+   <div class="timer">Time: <span id="time">0</span></div>
+    -->
+   <div id="end-screen" class="hide">
+      <h2>You're done!</h2>
+      <p>Your final score is <span id="final-score"></span></p>
+      <p>
+         Enter initials: <input type="text" id="initials" max="3">
+         <button id="submit">Submit</button>
+      </p>
+   </div>
+   <script type="text/javascript" src="./assets/script.js"></script>
 </body>
 </html>
