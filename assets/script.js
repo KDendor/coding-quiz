@@ -1,4 +1,12 @@
-// at the Top of our JAVASCRIPT we GRAB reference to elements on the DOM/HTML
+// var currentQuestionIndex = 0;
+// var time = questions.length * 15;
+// var timerId;
+
+// var questionsEl = document.getElementById('questions)');
+// var timerEL = document.getElementById('time');
+// var choicesEL =document.getElementById('choices');
+// var initialsEl = document.getElementById('initials');
+
 let startButton = document.getElementById('start-btn');
 startButton.addEventListener('click', startGame);
 
@@ -7,9 +15,6 @@ submitButton.addEventListener('click', checkAns);
 
 let currQuestion = 0
 let score = 0
-
-// function startGame () {
-
 
 let questions = [
     {
@@ -71,10 +76,13 @@ function startGame() {
 
 // function selectAnswer() 
 
-function loadScore() {
-    const totalScore = document.getElementById("score")
-    totalScore.textContent = `You scored ${score} out of ${questions.length}`
-}
+// function loadScore() {
+//     const totalScore = document.getElementById("score")
+//     totalScore.textContent = `You scored ${score} out of ${questions.length}`
+// }
+
+
+
 
 function checkAns() {
     let selectedAns = document.getElementById('input[choice="answer"]')
